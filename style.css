@@ -2,6 +2,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     background-color: #cccccc;
     min-height: 100svh;
 }
@@ -51,4 +52,78 @@ body {
     font-weight: 600;
     line-height: normal;
     letter-spacing: -1.4px;
+}
+
+
+
+/* V2 */
+
+.skill {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.outer {
+    width: 160px;
+    height: 160px;
+    /* padding: 20px; */
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.12), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 120px;
+    width: 120px;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid orangered;
+    border-radius: 50%;
+
+}
+
+
+#number {
+    font-weight: 600px;
+    color: #555;
+    font-size: 30px;
+
+}
+
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke: greenyellow;
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 300;
+    animation: anim 2s linear forwards;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+@keyframes anim{
+    100% {
+        stroke-dashoffset: 157.5;
+    }
+    
 }
